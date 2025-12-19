@@ -1,5 +1,6 @@
 from collections.abc import Mapping
 from typing import Any
+from BaseClasses import Region
 
 # Imports of base Archipelago modules must be absolute.
 from worlds.AutoWorld import World
@@ -7,7 +8,7 @@ from worlds.AutoWorld import World
 # Imports of your world's files must be relative.
 from . import items, locations, options, regions, rules, web_world
 
-# APQuest will go through all the parts of the world api one step at a time,
+# YARG will go through all the parts of the world api one step at a time,
 # with many examples and comments across multiple files.
 # If you'd rather read one continuous document, or just like reading multiple sources,
 # we also have this document specifying the entire world api:
@@ -37,8 +38,8 @@ class YARG(World):
     web = web_world.YARGWebWorld()
 
     # This is how we associate the options defined in our options.py with our world.
-    options_dataclass = options.YARGOptions
-    options: options.YARGOptions  # Common mistake: This has to be a colon (:), not an equals sign (=).
+    #options_dataclass = options.YARGOptions
+    #options: options.YARGOptions  # Common mistake: This has to be a colon (:), not an equals sign (=).
 
     # Our world class must have a static location_name_to_id and item_name_to_id defined.
     # We define these in regions.py and items.py respectively, so we just set them here.
@@ -47,12 +48,12 @@ class YARG(World):
 
     # There is always one region that the generator starts from & assumes you can always go back to.
     # This defaults to "Menu", but you can change it by overriding origin_region_name.
-    origin_region_name = "Menu"
+    #origin_region_name = "Menu"
 
     # Our world class must have certain functions ("steps") that get called during generation.
     # The main ones are: create_regions, set_rules, create_items.
     # For better structure and readability, we put each of these in their own file.
-    def create_regions(self) -> None:
+    def create_regions(self):
         regions.create_and_connect_regions(self)
         locations.create_all_locations(self)
 
@@ -64,7 +65,7 @@ class YARG(World):
 
     # Our world class must also have a create_item function that can create any one of our items by name at any time.
     # We also put this in a different file, the same one that create_items is in.
-    def create_item(self, name: str) -> items.APQuestItem:
+    def create_item(self, name: str) -> items.YARGItem:
         return items.create_item_with_correct_classification(self, name)
 
     # For features such as item links and panic-method start inventory, AP may ask your world to create extra filler.
@@ -78,8 +79,8 @@ class YARG(World):
     # There may be data that the game client will need to modify the behavior of the game.
     # This is what slot_data exists for. Upon every client connection, the slot's slot_data is sent to the client.
     # slot_data is just a dictionary using basic types, that will be converted to json when sent to the client.
-    def fill_slot_data(self) -> Mapping[str, Any]:
+    #def fill_slot_data(self) -> Mapping[str, Any]:
         # If you need access to the player's chosen options on the client side, there is a helper for that.
-        return self.options.as_dict(
-            "instument"
-        )
+     #   return self.options.as_dict(
+     #       "instument"
+     #   )

@@ -1,11 +1,11 @@
 from BaseClasses import Tutorial
 from worlds.AutoWorld import WebWorld
 
-from .options import option_groups, option_presets
+#from .options import option_groups, option_presets
 
 
 # For our game to display correctly on the website, we need to define a WebWorld subclass.
-class APQuestWebWorld(WebWorld):
+class YARGWebWorld(WebWorld):
     # We need to override the "game" field of the WebWorld superclass.
     # This must be the same string as the regular World class.
     game = "YARG"
@@ -34,5 +34,5 @@ class APQuestWebWorld(WebWorld):
     tutorials = [setup_en]
 
     # If we have option groups and/or option presets, we need to specify these here as well.
-    option_groups = option_groups
-    options_presets = option_presets
+    #option_groups = option_groups
+    #options_presets = option_presets
