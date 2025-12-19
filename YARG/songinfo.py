@@ -24,7 +24,7 @@ Songs: Dict[str, SongMeta] = {
     "Alibi": SongMeta(3, 3, 6, None, 0, 0, 4, 4, 4),
     "All of a Sudden": SongMeta(3, 3, 4, None, 2, 3, 1, 1, None),
     "Allure": SongMeta(5, 5, 6, None, 0, 0, 2, 2, 2),
-    "Avatar the Last Cakebender": SongMeta(4, 3, 5, None, 4, 4, 4, 4, 4)
+    "Avatar the Last Cakebender": SongMeta(4, 3, 5, None, 4, 4, 4, 4, 4),
     "Avatara": SongMeta(2, 2, 4, 4, 2, 2, 0, 0, None),
     "Bathe in Blood": SongMeta(6, 2, 6, None, None, None, 0, None, None),
     "Bedroom Community": SongMeta(3, 3, 3, 3, 5, 5, 3, 3, 3),
@@ -81,7 +81,7 @@ Songs: Dict[str, SongMeta] = {
     "No Remedy": SongMeta(1, 1, 3, None, 3, 3, 2, 2, 2),
     "Nomu": SongMeta(3, 2, 3, None, None, None, 5, 5, 5),
     "Numb the Mind": SongMeta(1, 0, 2, None, 0, 0, 2, None, None),
-    "\"Oh, Krissy Baby!\"": SongMeta(3, 2, 2, None, 3, 3, 4, 4, 4)
+    "\"Oh, Krissy Baby!\"": SongMeta(3, 2, 2, None, 3, 3, 4, 4, 4),
     "Oopsie Daisy": SongMeta(1, 3, 2, None, 2, 2, 3, 3, 3),
     "Over Again": SongMeta(2, 1, 2, None, 1, 1, 5, 5, 5),
     "Overdrive": SongMeta(3, 2, 3, None, None, None, 3, None, None),
