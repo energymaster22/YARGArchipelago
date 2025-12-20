@@ -1,6 +1,6 @@
 from collections.abc import Mapping
 from typing import Any
-from BaseClasses import Region
+from BaseClasses import Region, MultiWorld
 
 # Imports of base Archipelago modules must be absolute.
 from worlds.AutoWorld import World
@@ -43,6 +43,12 @@ class YARG(World):
     #options_dataclass = options.YARGOptions
     #options: options.YARGOptions  # Common mistake: This has to be a colon (:), not an equals sign (=).
 
+    def __init__(self, multiworld: MultiWorld, player: int):
+        super().__init__(multiworld, player)
+        self.goal_song = ""
+
+
+    
     def generate_early(self) -> None:
         starting_song_index = self.random.randint(0,(len(Songs)))
         tempindex = self.random.randint(0,(len(Songs)))
@@ -55,8 +61,14 @@ class YARG(World):
         songlist = list(Songs.keys())
         startingsong = self.create_item(str(songlist[starting_song_index]))
         self.push_precollected(startingsong)
+        self.goal_song = str(songlist[goal_song_index])
         self.multiworld.completion_condition[self.player] = lambda state: state.has((songlist[goal_song_index]), self.player)
 
+    def fill_slot_data(self) -> Mapping[str, Any]:
+        slot_data = {}
+        slot_data["Goal Song"] = self.goal_song
+
+        return slot_data
 
     # Our world class must have a static location_name_to_id and item_name_to_id defined.
     # We define these in regions.py and items.py respectively, so we just set them here.
