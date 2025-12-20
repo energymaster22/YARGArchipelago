@@ -146,5 +146,5 @@ def create_all_items(world: YARGWorld) -> None:
         # We're adding a filler item, but you can also add progression items to the player's precollected inventory.
         # starting_confetti_cannon = world.create_item("Confetti Cannon")
         # world.push_precollected(starting_confetti_cannon)
-    startingsong = world.create_item("106")
-    world.push_precollected(startingsong)
+    
+    

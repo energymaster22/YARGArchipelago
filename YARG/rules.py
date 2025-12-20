@@ -18,7 +18,7 @@ def set_all_rules(world: YARGWorld) -> None:
     # We'll do entrances first, then locations, and then finally we set our victory condition.
 
     set_all_location_rules(world)
-    set_completion_condition(world)
+    #set_completion_condition(world)
 
 def set_all_location_rules(world: YARGWorld) -> None:
     # Location rules work no differently from Entrance rules.
@@ -42,6 +42,6 @@ def set_all_location_rules(world: YARGWorld) -> None:
         set_rule(location2, lambda state, x=item: state.has(x, world.player))
 
 
-def set_completion_condition(world: YARGWorld) -> None:
+#def set_completion_condition(world: YARGWorld) -> None:
     
-    world.multiworld.completion_condition[world.player] = lambda state: state.has("1nput This 2 Y0ur Spine", world.player)
+    

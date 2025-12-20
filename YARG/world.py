@@ -8,6 +8,8 @@ from worlds.AutoWorld import World
 # Imports of your world's files must be relative.
 from . import items, locations, options, regions, rules, web_world
 
+from .songinfo import Songs
+
 # YARG will go through all the parts of the world api one step at a time,
 # with many examples and comments across multiple files.
 # If you'd rather read one continuous document, or just like reading multiple sources,
@@ -40,6 +42,21 @@ class YARG(World):
     # This is how we associate the options defined in our options.py with our world.
     #options_dataclass = options.YARGOptions
     #options: options.YARGOptions  # Common mistake: This has to be a colon (:), not an equals sign (=).
+
+    def generate_early(self) -> None:
+        starting_song_index = self.random.randint(0,(len(Songs)))
+        tempindex = self.random.randint(0,(len(Songs)))
+        if tempindex == starting_song_index:
+            if tempindex == 0:
+                tempindex = tempindex + 1
+            else:
+                tempindex = tempindex - 1
+        goal_song_index = tempindex
+        songlist = list(Songs.keys())
+        startingsong = self.create_item(str(songlist[starting_song_index]))
+        self.push_precollected(startingsong)
+        self.multiworld.completion_condition[self.player] = lambda state: state.has((songlist[goal_song_index]), self.player)
+
 
     # Our world class must have a static location_name_to_id and item_name_to_id defined.
     # We define these in regions.py and items.py respectively, so we just set them here.
