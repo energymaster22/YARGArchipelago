@@ -28,3 +28,22 @@ GAMEPLAY:
 Current Notes:
 YARG Gems grant 25% Star Power upon collection
 If a song does not support your current instrument, or you otherwise cannot complete the song, you can use a bot player to clear it
+
+# Common Problems
+## My songs are not loading!
+
+This can be caused by a few things. First make sure that you have downloaded the setlists from the YARC launcher.
+
+Sometimes YARG needs to rescan of your library, to do so, go to Settings> Songs and click "Scan songs" up at the top
+
+Other times YARG forks do not find the YARC setlists automatically. This is a slightly more involved fix:
+1. Open the YARC Launcher
+2. Scroll all the way down the left panel
+3. Click the Settings button on the bottom left
+4. Note the directory under "File Management"
+5. In the YARGAPClient go to Settings> Songs
+6. Click "Add New Folder" 
+7. Click "Browse" on the new entry
+8. Navigate to the folder you saw in the YARC Launcher settings
+9. Within the YARC install folder selct the "Setlists" folder
+10. Click "Scan Songs"
