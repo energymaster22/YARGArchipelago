@@ -11,6 +11,8 @@ from .songinfo import Songs
 from .locations import LOCATION_NAME_TO_ID
 from .items import ITEM_NAME_TO_ID
 
+import math
+
 class YARG(World):
     """
     YARG is an Open-Source plastic band rhythm game! 
@@ -28,7 +30,9 @@ class YARG(World):
     def __init__(self, multiworld: MultiWorld, player: int):
         super().__init__(multiworld, player)
         self.goal_song = ""
+        self.starting_song = ""
         self.selectedsonglist = []
+        self.yarggemamount = 0
 
 
     
@@ -51,14 +55,25 @@ class YARG(World):
             else:
                 tempindex = tempindex - 1
         goal_song_index = tempindex
+        self.starting_song = str(self.selectedsonglist[starting_song_index])
         startingsong = self.create_item(str(self.selectedsonglist[starting_song_index]))
         #push_precollected does create a duplicate of the song unlock item
         #This shouldn't be a problem for now but should be looked into if
         #we run into too many items in the future somehow
         self.push_precollected(startingsong)
         self.goal_song = str(self.selectedsonglist[goal_song_index])
+        
+        #Calculate required YARG gem count based on song list and yaml option (thanks kev :) 
+        optionpercent = self.options.percent_of_gems_required
+        setlistlength = len(self.selectedsonglist)
+        self.yarggemamount = int(math.floor((optionpercent / 100) * setlistlength))
+        print("~~~~YARG GEM REQUIREMENT~~~")
+        print(self.yarggemamount)
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        
+        
         self.multiworld.completion_condition[self.player] = lambda state: (
-            state.has((self.selectedsonglist[goal_song_index]), self.player) and state.has("YARG Gem", self.player, len(self.selectedsonglist))
+            state.has((self.selectedsonglist[goal_song_index]), self.player) and state.has("YARG Gem", self.player, self.yarggemamount)
         )
     def fill_slot_data(self) -> Mapping[str, Any]:
         slot_data = {}
@@ -76,7 +91,7 @@ class YARG(World):
         
         slot_data["Goal Song"] = self.goal_song
         slot_data["songlist"] = slotdatasongdict
-        slot_data["Gems Required"] = (len(self.selectedsonglist))
+        slot_data["Gems Required"] = self.yarggemamount
 
         return slot_data
 

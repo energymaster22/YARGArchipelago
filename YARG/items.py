@@ -50,7 +50,8 @@ def create_all_items(world: YARGWorld) -> None:
     itempool: list[Item] = []
 
     for name in world.selectedsonglist:
-        itempool.append(world.create_item(str(name)))
+        if name != world.starting_song:
+            itempool.append(world.create_item(str(name)))
         itempool.append(world.create_item("YARG Gem"))
 
 
