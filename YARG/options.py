@@ -1,12 +1,15 @@
 from dataclasses import dataclass
 
-from Options import Choice, OptionGroup, PerGameCommonOptions, Range
+from Options import Choice, OptionGroup, PerGameCommonOptions, Range, OptionSet
 
 from .songinfo import Songs
 
 class TotalSongs(Range):
     """
     The total amount of songs in the multiworld.
+
+    Note: Final song count may be lowered if there are not enough songs
+    in the enabled setlists.
     """
 
     display_name = "Total Songs"
@@ -27,6 +30,20 @@ class PercentOfGemsGenerated(Range):
     range_end = 100
 
     default = 80
+
+class EnabledSetlists(OptionSet):
+    """
+    Select the setlists you want to play/have downloaded.
+    """
+
+    display_name = "Enabled Setlists"
+
+    setlistkeys = set()
+
+    for key, data in Songs.items():
+        setlistkeys.add(str(data.group))
+
+    valid_keys = setlistkeys
 
 class GoalSongVisibility(Choice):
     """
@@ -80,11 +97,12 @@ class YARGOptions(PerGameCommonOptions):
     percent_of_gems_generated: PercentOfGemsGenerated
     goal_song_visibility: GoalSongVisibility
     deathlink: DeathLink
+    enabled_setlists: EnabledSetlists
 
 option_groups = [
     OptionGroup(
         "Song Selection Options",
-        [TotalSongs, PercentOfGemsGenerated],
+        [TotalSongs, PercentOfGemsGenerated, EnabledSetlists],
     ),
     OptionGroup(
         "Visibility Options",

@@ -37,10 +37,23 @@ class YARG(World):
 
     
     def generate_early(self) -> None:
-        #Setup a song list with the length set in yaml options
-        fullsonglist = list(Songs.keys())
-    
-        for i in range(self.options.total_songs):
+        
+        #fullsonglist = list(Songs.keys())
+        fullsonglist = list()
+
+        
+        for test, data in Songs.items():
+            for x in set(self.options.enabled_setlists.value):
+                if str(data.group) == str(x):
+                    fullsonglist.append(test)
+
+        if len(fullsonglist) < self.options.total_songs:
+            finalsongcount = len(fullsonglist)
+        else:
+            finalsongcount = self.options.total_songs
+
+
+        for i in range(finalsongcount):
             selectedsongindex = self.random.randint(0,(len(fullsonglist) - 1))
             self.selectedsonglist.append(fullsonglist[selectedsongindex])
             fullsonglist.pop(selectedsongindex)
