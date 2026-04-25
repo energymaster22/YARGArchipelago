@@ -339,6 +339,12 @@ Songs: Dict[int, SongMeta] = {
     318: SongMeta("Galaxy Pixel", "Walter Ralts", "Walter Ralts 01", "yarn", 3, 3, 6, None, 6, 6, 0, None, None, None),
     319: SongMeta("Unfindable", "Walter Ralts", "Walter Ralts 01", "yarn", 4, 2, 2, None, 3, 3, None, None, None, None),
     320: SongMeta("What Is...?", "Walter Ralts", "Walter Ralts 01", "yarn", 6, 5, 6, 6, 6, 6, 0, None, None, None),
+    321: SongMeta("Ain't Askin for Much", "Gnarlemagne", "YARG Official Setlist", "yarg", 4, 3, 5, None, 1, 1, 4, None, None, None),
+    322: SongMeta("Rambling Rose", "White Coven", "YARG Official Setlist", "yarg", 6, 3, 4, None, 5, 5, 5, 5, 5, None),
+    323: SongMeta("Square Things", "Jonathan Coulton", "YARG Official Setlist", "yarg", 1, 1, 0, None, 2, 2, 2, 2, 2, None),
+    324: SongMeta("Third Degree", "Davvn", "YARG Official Setlist", "yarg", 2, 1, 4, None, 3, 3, 2, 2, 2, None),
+    325: SongMeta("Tick Tock", "obkatiekat", "YARG Official Setlist", "yarg", 6, 5, 8, None, 5, 5, 0, 0, 0, None),
+    326: SongMeta("We Are the Gang", "The Gang", "YARG Official Setlist", "yarg", 3, 2, 0, None, 1, 1, 3, 3, 3, None),
 
 }
 
