@@ -426,6 +426,13 @@ Songs: Dict[int, SongMeta] = {
     405: SongMeta("Static (feat. Hatsune Miku)", "FLAVOR FOLEY", "YARN Pack 4", "yarn", 4, 3, 5, None, 3, None, 4, None, None, None),
     406: SongMeta("To Breath Is", "Walter Ralts", "YARN Pack 4", "yarn", 6, 3, 3, None, 2, 2, None, None, None, 1),
     407: SongMeta("Why We Lose (feat. Coleman Trapp)", "Cartoon, Coleman Trapp, Jéja", "YARN Pack 4", "yarn", 2, 3, 3, None, 1, 1, 2, 2, None, None),
+    408: SongMeta("Cadmium Colors (feat. Kasane Teto)", "Jamie Paige", "YARN Request Pack 2", "yarn", 2, None, None, None, None, None, None, None, None, None),
+    409: SongMeta("First Star Tonight", "Masked Intruder", "YARN Request Pack 2", "yarn", 2, None, None, None, None, None, None, None, None, None),
+    410: SongMeta("LIKED U BETTER", "Jeff Rosenstock", "YARN Request Pack 2", "yarn", 3, None, None, None, None, None, None, None, None, None),
+    411: SongMeta("Luxury (feat. vally.exe)", "Alohaii", "YARN Request Pack 2", "yarn", 4, None, None, None, None, None, None, None, None, None),
+    412: SongMeta("MINIMUM RAGE (feat. Kasane Teto)", "MonochroMenace", "YARN Request Pack 2", "yarn", 2, 2, 3, None, 1, 1, 2, 2, 2, None),
+    413: SongMeta("Two Trucks", "Lemon Demon", "YARN Request Pack 2", "yarn", 3, None, 3, None, None, None, 3, None, None, None),
+    414: SongMeta("Years", "Dex Arson", "YARN Request Pack 2", "yarn", 7, None, None, None, None, None, None, None, None, None),
 
 }
 
