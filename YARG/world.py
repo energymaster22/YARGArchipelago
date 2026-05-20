@@ -438,8 +438,6 @@ class YARG(World):
             metadatalist = []
             songid = str((Songs.get(name)).songname)
             loc1id = LOCATION_NAME_TO_ID["\"" + itemnamefromindex(name) + "\" Item 1"]
-            loc2id = LOCATION_NAME_TO_ID["\"" + itemnamefromindex(name) + "\" Item 2"]
-            loc3id = LOCATION_NAME_TO_ID["\"" + itemnamefromindex(name) + "\" Item 3"]
             itemid = ITEM_NAME_TO_ID[itemnamefromindex(name)]
             source = str((Songs.get(name)).source)
             artist = (Songs.get(name)).artistname
@@ -447,8 +445,6 @@ class YARG(World):
                 instru = str(self.songinstruments[name])
             metadatalist.append(songid)
             metadatalist.append(loc1id)
-            metadatalist.append(loc2id)
-            metadatalist.append(loc3id)
             metadatalist.append(itemid)
             metadatalist.append(source)
             metadatalist.append(artist)
