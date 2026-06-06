@@ -438,14 +438,12 @@ class YARG(World):
             metadatalist = []
             songid = str((Songs.get(name)).songname)
             loc1id = LOCATION_NAME_TO_ID["\"" + itemnamefromindex(name) + "\" Item 1"]
-            itemid = ITEM_NAME_TO_ID[itemnamefromindex(name)]
             source = str((Songs.get(name)).source)
             artist = (Songs.get(name)).artistname
             if self.shuffletoggle:
                 instru = str(self.songinstruments[name])
             metadatalist.append(songid)
             metadatalist.append(loc1id)
-            metadatalist.append(itemid)
             metadatalist.append(source)
             metadatalist.append(artist)
             if self.shuffletoggle:
