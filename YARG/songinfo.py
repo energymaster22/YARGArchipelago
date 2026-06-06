@@ -433,6 +433,9 @@ Songs: Dict[int, SongMeta] = {
     412: SongMeta("MINIMUM RAGE (feat. Kasane Teto)", "MonochroMenace", "YARN Request Pack 2", "yarn", 2, 2, 3, None, 1, 1, 2, 2, 2, None),
     413: SongMeta("Two Trucks", "Lemon Demon", "YARN Request Pack 2", "yarn", 3, None, 3, None, None, None, 3, None, None, None),
     414: SongMeta("Years", "Dex Arson", "YARN Request Pack 2", "yarn", 7, None, None, None, None, None, None, None, None, None),
+    415: SongMeta("FUTURESIGHT (w/ FinMint)", "Whiteweek", "Whiteweek 01", "yargdlc", 5, 4, 6, None, 2, 2, 0, 0, 0, 4),
+    416: SongMeta("Peak Distraction Mechanics", "Whiteweek", "Whiteweek 01", "yargdlc", 6, 6, 8, None, None, None, 1, None, None, 6),
+    417: SongMeta("Powerwash Annihilation!! (w/ pa_l4ch)", "Whiteweek", "Whiteweek 01", "yargdlc", 7, 6, 8, None, 7, 7, None, None, None, 6),
 
 }
 
