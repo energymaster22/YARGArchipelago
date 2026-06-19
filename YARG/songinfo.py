@@ -440,6 +440,10 @@ Songs: Dict[int, SongMeta] = {
     419: SongMeta("I Love It Here, I Live Here", "Luge", "Luge 01", "yarn", 1, 1, 4, None, 1, 1, 3, None, None, None),
     420: SongMeta("Sit Mana Sirds", "Luge", "Luge 01", "yarn", 4, 4, 4, None, 0, 0, 4, 4, None, None),
     421: SongMeta("Spoon Feeding Crab Walking", "Luge", "Luge 01", "yarn", 3, 2, 5, None, 1, 1, 3, 3, None, None),
+    422: SongMeta("Author", "RENREN", "Pronoun Palace 01", "yarn", 2, 2, 2, None, None, None, None, None, None, None),
+    423: SongMeta("Body Paragraph", "RENREN", "Pronoun Palace 01", "yarn", 1, 1, 3, None, None, None, 0, None, None, None),
+    424: SongMeta("MX", "RENREN", "Pronoun Palace 01", "yarn", 3, 3, 5, None, None, None, None, None, None, None),
+    425: SongMeta("Typeface", "RENREN", "Pronoun Palace 01", "yarn", 4, 4, 5, None, None, None, None, None, None, None),
 
 }
 
