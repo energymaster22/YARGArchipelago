@@ -436,6 +436,20 @@ Songs: Dict[int, SongMeta] = {
     415: SongMeta("FUTURESIGHT (w/ FinMint)", "Whiteweek", "Whiteweek 01", "yargdlc", 5, 4, 6, None, 2, 2, 0, 0, 0, 4),
     416: SongMeta("Peak Distraction Mechanics", "Whiteweek", "Whiteweek 01", "yargdlc", 6, 6, 8, None, None, None, 1, None, None, 6),
     417: SongMeta("Powerwash Annihilation!! (w/ pa_l4ch)", "Whiteweek", "Whiteweek 01", "yargdlc", 7, 6, 8, None, 7, 7, None, None, None, 6),
+    418: SongMeta("Driving In My Car", "Luge", "Luge 01", "yarn", 4, 5, 3, None, 1, 1, 4, 4, 4, None),
+    419: SongMeta("I Love It Here, I Live Here", "Luge", "Luge 01", "yarn", 1, 1, 4, None, 1, 1, 3, None, None, None),
+    420: SongMeta("Sit Mana Sirds", "Luge", "Luge 01", "yarn", 4, 4, 4, None, 0, 0, 4, 4, None, None),
+    421: SongMeta("Spoon Feeding Crab Walking", "Luge", "Luge 01", "yarn", 3, 2, 5, None, 1, 1, 3, 3, None, None),
+    422: SongMeta("Author", "RENREN", "Pronoun Palace 01", "yarn", 2, 2, 2, None, None, None, None, None, None, None),
+    423: SongMeta("Body Paragraph", "RENREN", "Pronoun Palace 01", "yarn", 1, 1, 3, None, None, None, 0, None, None, None),
+    424: SongMeta("MX", "RENREN", "Pronoun Palace 01", "yarn", 3, 3, 5, None, None, None, None, None, None, None),
+    425: SongMeta("Typeface", "RENREN", "Pronoun Palace 01", "yarn", 4, 4, 5, None, None, None, None, None, None, None),
+    426: SongMeta("Dance Delightful (feat. Adachi Rei)", "Jamie Paige", "YARN Request Pack 3", "yarn", 5, None, None, None, None, None, None, None, None, None),
+    427: SongMeta("Dance with Silence", "Camellia", "YARN Request Pack 3", "yarn", 7, None, None, None, None, None, None, None, None, None),
+    428: SongMeta("Denying the Spotlight", "Barnum", "YARN Request Pack 3", "yarn", 2, None, 2, None, None, None, None, None, None, None),
+    429: SongMeta("No Cock Like Horse Cock", "Pepper Coyote", "YARN Request Pack 3", "yarn", 5, None, 3, None, None, None, None, None, None, None),
+    430: SongMeta("Outer Heaven Dude Ranch", "Pretty Bitter", "YARN Request Pack 3", "yarn", 1, None, 4, None, None, None, None, None, None, None),
+    431: SongMeta("Streetlight by Streetlight", "This Is The Glasshouse", "YARN Request Pack 3", "yarn", 3, None, 5, None, None, None, None, None, None, None),
 
 }
 
