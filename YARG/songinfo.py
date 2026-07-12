@@ -447,9 +447,8 @@ Songs: Dict[int, SongMeta] = {
     426: SongMeta("Dance Delightful (feat. Adachi Rei)", "Jamie Paige", "YARN Request Pack 3", "yarn", 5, None, None, None, None, None, None, None, None, None),
     427: SongMeta("Dance with Silence", "Camellia", "YARN Request Pack 3", "yarn", 7, None, None, None, None, None, None, None, None, None),
     428: SongMeta("Denying the Spotlight", "Barnum", "YARN Request Pack 3", "yarn", 2, None, 2, None, None, None, None, None, None, None),
-    429: SongMeta("No Cock Like Horse Cock", "Pepper Coyote", "YARN Request Pack 3", "yarn", 5, None, 3, None, None, None, None, None, None, None),
-    430: SongMeta("Outer Heaven Dude Ranch", "Pretty Bitter", "YARN Request Pack 3", "yarn", 1, None, 4, None, None, None, None, None, None, None),
-    431: SongMeta("Streetlight by Streetlight", "This Is The Glasshouse", "YARN Request Pack 3", "yarn", 3, None, 5, None, None, None, None, None, None, None),
+    429: SongMeta("Outer Heaven Dude Ranch", "Pretty Bitter", "YARN Request Pack 3", "yarn", 1, None, 4, None, None, None, None, None, None, None),
+    430: SongMeta("Streetlight by Streetlight", "This Is The Glasshouse", "YARN Request Pack 3", "yarn", 3, None, 5, None, None, None, None, None, None, None),
 
 }
 
