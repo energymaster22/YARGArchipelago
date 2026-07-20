@@ -461,6 +461,8 @@ Songs: Dict[int, SongMeta] = {
     440: SongMeta("Supernova", "Barely March", "YARN Pack 5", "yarn", 3, 3, 3, None, None, None, 2, None, None, None),
     441: SongMeta("Techock", "Waterflame", "YARN Pack 5", "yarn", 4, 2, 5, None, 4, None, None, None, None, None),
     442: SongMeta("yeh", "C418", "YARN Pack 5", "yarn", 2, 2, 2, None, None, None, None, None, None, None),
+    443: SongMeta("When I Die", "Pepper Coyote", "YARN Request Pack 3", "yarn", 6, None, 4, None, None, None, None, None, None, None),
+
 
 }
 
