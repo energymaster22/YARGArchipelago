@@ -462,6 +462,15 @@ Songs: Dict[int, SongMeta] = {
     441: SongMeta("Techock", "Waterflame", "YARN Pack 5", "yarn", 4, 2, 5, None, 4, None, None, None, None, None),
     442: SongMeta("yeh", "C418", "YARN Pack 5", "yarn", 2, 2, 2, None, None, None, None, None, None, None),
     443: SongMeta("When I Die", "Pepper Coyote", "YARN Request Pack 3", "yarn", 6, None, 4, None, None, None, None, None, None, None),
+    444: SongMeta("Confused", "Walter Ralts", "Teto Pack 2", "yarn", 4, 4, 6, None, 5, 6, 6, 6, 6, None),
+    445: SongMeta("Honestly", "THØRNS", "Teto Pack 2", "yarn", 5, 3, 6, None, 5, 5, 4, 4, 4, None),
+    446: SongMeta("Spoken For", "FLAVOR FOLEY", "Teto Pack 2", "yarn", 2, 3, 3, None, 4, 4, 4, 4, 4, 3),
+    447: SongMeta("Telyacaster", "Soyupoyu", "Teto Pack 2", "yarn", 4, 3, 4, None, 2, 2, 1, 1, 1, 4), #TODO: Add Co-op Guitar (Diff 0)
+    448: SongMeta("Tetoris", "Hiiragi Magnetite", "Teto Pack 2", "yarn", 5, 4, 4, None, None, None, 6, None, None, None),
+    449: SongMeta("Tokyo", "2997_p", "Teto Pack 2", "yarn", 3, 3, 3, None, None, None, 2, None, None, 2),
+    450: SongMeta("Ykaneinatteru!", "Machi", "Teto Pack 2", "yarn", 4, 3, 4, None, None, None, 2, 2, None, 3),
+    451: SongMeta("Yodakanohoshi", "Kuyo", "Teto Pack 2", "yarn", 3, 2, 3, None, 3, 3, 3, 3, 3, None),
+    452: SongMeta("You Make Me Sick", "Bitbreaker", "Teto Pack 2", "yarn", 5, 4, 5, None, 3, 3, 3, None, None, None),
 
 
 }
