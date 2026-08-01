@@ -471,6 +471,12 @@ Songs: Dict[int, SongMeta] = {
     450: SongMeta("Ykaneinatteru!", "Machi", "Teto Pack 2", "yarn", 4, 3, 4, None, None, None, 2, 2, None, 3),
     451: SongMeta("Yodakanohoshi", "Kuyo", "Teto Pack 2", "yarn", 3, 2, 3, None, 3, 3, 3, 3, 3, None),
     452: SongMeta("You Make Me Sick", "Bitbreaker", "Teto Pack 2", "yarn", 5, 4, 5, None, 3, 3, 3, None, None, None),
+    453: SongMeta("34 Ghosts IV", "Nine Inch Nails", "Variety Pack 1", "yargdlc", 4, 0, 0, 0, 4, 4, None, None, None, 0),
+    454: SongMeta("Funky New Orleans", "Gnarlemagne", "Variety Pack 1", "yargdlc", 3, 3, 3, 3, 2, 2, 5, 5, 5, 3),
+    455: SongMeta("Space Duck", "Sexual Lobster", "Variety Pack 1", "yargdlc", 3, 3, 1, None, 3, 3, None, None, None, 0),
+    456: SongMeta("The Birthday Cake Song", "The Wikimedia Foundation", "Variety Pack 1", "yargdlc", 2, 1, 2, None, 1, 1, 5, 5, 5, 2),
+    457: SongMeta("The Elements", "Tom Lehrer", "Variety Pack 1", "yargdlc", None, 2, None, None, 4, 4, 6, None, None, None),
+    458: SongMeta("The Undertaker's Daughter", "Steampianist", "Variety Pack 1", "yargdlc", 4, 2, 4, None, 5, 5, 4, 4, 4, 3),
 
 
 }
