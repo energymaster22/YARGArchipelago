@@ -449,6 +449,35 @@ Songs: Dict[int, SongMeta] = {
     428: SongMeta("Denying the Spotlight", "Barnum", "YARN Request Pack 3", "yarn", 2, None, 2, None, None, None, None, None, None, None),
     429: SongMeta("Outer Heaven Dude Ranch", "Pretty Bitter", "YARN Request Pack 3", "yarn", 1, None, 4, None, None, None, None, None, None, None),
     430: SongMeta("Streetlight by Streetlight", "This Is The Glasshouse", "YARN Request Pack 3", "yarn", 3, None, 5, None, None, None, None, None, None, None),
+    431: SongMeta("Ashen Rhapsody", "Chaotrope", "YARN Pack 5", "yarn", 8, 5, 6, None, None, None, None, None, None, None),
+    432: SongMeta("Digital Love (feat. Shabel Tonya, Crydiaa, Nini Yuuna, Miori Celesta & Yoclesh)", "Alohaii", "YARN Pack 5", "yarn", 3, None, None, None, None, None, None, None, None, None),
+    433: SongMeta("Energy", "Logan Fendi", "YARN Pack 5", "yarn", 0, 0, 3, 3, None, None, 1, None, None, None),
+    434: SongMeta("HEAD", "Jeff Rosenstock", "YARN Pack 5", "yarn", 2, 3, 4, None, None, None, 2, None, None, None), #TODO: Add Co-op Guitar (Diff 0)
+    435: SongMeta("HELLLLHOOOOLE / June 21st", "Jeff Rosenstock", "YARN Pack 5", "yarn", 3, 2, 5, None, 1, 1, 3, 3, 3, 3),
+    436: SongMeta("If I'm Lucky", "State Champs", "YARN Pack 5", "yarn", 2, None, 0, None, None, None, 2, None, None, None),
+    437: SongMeta("Misplaced My Keys", "Stevia Sphere", "YARN Pack 5", "yarn", 2, 2, 1, None, None, None, None, None, None, None),
+    438: SongMeta("One More Round! (feat. Aida Lyra)", "Clover from the Clouds", "YARN Pack 5", "yarn", 4, 5, 4, None, 4, 4, 4, None, None, None),
+    439: SongMeta("Senescence", "Chaotrope", "YARN Pack 5", "yarn", 6, 6, 5, None, None, None, None, None, None, None),
+    440: SongMeta("Supernova", "Barely March", "YARN Pack 5", "yarn", 3, 3, 3, None, None, None, 2, None, None, None),
+    441: SongMeta("Techock", "Waterflame", "YARN Pack 5", "yarn", 4, 2, 5, None, 4, None, None, None, None, None),
+    442: SongMeta("yeh", "C418", "YARN Pack 5", "yarn", 2, 2, 2, None, None, None, None, None, None, None),
+    443: SongMeta("When I Die", "Pepper Coyote", "YARN Request Pack 3", "yarn", 6, None, 4, None, None, None, None, None, None, None),
+    444: SongMeta("Confused", "Walter Ralts", "Teto Pack 2", "yarn", 4, 4, 6, None, 5, 6, 6, 6, 6, None),
+    445: SongMeta("Honestly", "THØRNS", "Teto Pack 2", "yarn", 5, 3, 6, None, 5, 5, 4, 4, 4, None),
+    446: SongMeta("Spoken For", "FLAVOR FOLEY", "Teto Pack 2", "yarn", 2, 3, 3, None, 4, 4, 4, 4, 4, 3),
+    447: SongMeta("Telyacaster", "Soyupoyu", "Teto Pack 2", "yarn", 4, 3, 4, None, 2, 2, 1, 1, 1, 4), #TODO: Add Co-op Guitar (Diff 0)
+    448: SongMeta("Tetoris", "Hiiragi Magnetite", "Teto Pack 2", "yarn", 5, 4, 4, None, None, None, 6, None, None, None),
+    449: SongMeta("Tokyo", "2997_p", "Teto Pack 2", "yarn", 3, 3, 3, None, None, None, 2, None, None, 2),
+    450: SongMeta("Ykaneinatteru!", "Machi", "Teto Pack 2", "yarn", 4, 3, 4, None, None, None, 2, 2, None, 3),
+    451: SongMeta("Yodakanohoshi", "Kuyo", "Teto Pack 2", "yarn", 3, 2, 3, None, 3, 3, 3, 3, 3, None),
+    452: SongMeta("You Make Me Sick", "Bitbreaker", "Teto Pack 2", "yarn", 5, 4, 5, None, 3, 3, 3, None, None, None),
+    453: SongMeta("34 Ghosts IV", "Nine Inch Nails", "Variety Pack 1", "yargdlc", 4, 0, 0, 0, 4, 4, None, None, None, 0),
+    454: SongMeta("Funky New Orleans", "Gnarlemagne", "Variety Pack 1", "yargdlc", 3, 3, 3, 3, 2, 2, 5, 5, 5, 3),
+    455: SongMeta("Space Duck", "Sexual Lobster", "Variety Pack 1", "yargdlc", 3, 3, 1, None, 3, 3, None, None, None, 0),
+    456: SongMeta("The Birthday Cake Song", "The Wikimedia Foundation", "Variety Pack 1", "yargdlc", 2, 1, 2, None, 1, 1, 5, 5, 5, 2),
+    457: SongMeta("The Elements", "Tom Lehrer", "Variety Pack 1", "yargdlc", None, 2, None, None, 4, 4, 6, None, None, None),
+    458: SongMeta("The Undertaker's Daughter", "Steampianist", "Variety Pack 1", "yargdlc", 4, 2, 4, None, 5, 5, 4, 4, 4, 3),
+
 
 }
 
