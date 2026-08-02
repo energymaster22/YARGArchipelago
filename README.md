@@ -12,6 +12,21 @@ This is an Archipelago implementation for the open source, plastic band rhythm g
 9. Edit YARG.yaml to your liking and put it in your "Players" folder (should be one folder up from the "Templates" folder the previous step opened)
 10. Select "Generate" from within Archipelago
 11. Host your outputed multiworld either on https://archipelago.gg/ or locally
+> [!NOTE]
+> ## Mac Users
+> You will have to perform some extra steps to make the YARGAPClient launch.
+> 1. Navigate to the `YARGAPClient_x.y.z_Mac` folder where the YARGAPClient is downloaded
+> 2. Right click on the `YARGAPClient_x.y.z_Mac` folder
+> 3. Select `New Terminal at Folder`
+> - This may be under a `Services` Sub Menu
+> 4. Run the following commands in the terminal
+> ```
+> xattr -cr ~/YARG*
+> chmod -R +x ~/YARG*
+> ```
+> 5. Drag the `YARGAPClient_x.y.z_Mac` Application to the `Applications` folder
+> 
+> Thank you to vast2 and dengr1065 for figuring out how to get the Mac version running!
 12. Launch the YARGAPClient
 13. Click "Archipelago" on the main menu to open the login screen
 14. Input the host address, port and slot name and press connect! (Game ID should be left blank if not playing on a fork) (Leave blank if unsure)
