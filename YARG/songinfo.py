@@ -477,6 +477,11 @@ Songs: Dict[int, SongMeta] = {
     456: SongMeta("The Birthday Cake Song", "The Wikimedia Foundation", "Variety Pack 1", "yargdlc", 2, 1, 2, None, 1, 1, 5, 5, 5, 2),
     457: SongMeta("The Elements", "Tom Lehrer", "Variety Pack 1", "yargdlc", None, 2, None, None, 4, 4, 6, None, None, None),
     458: SongMeta("The Undertaker's Daughter", "Steampianist", "Variety Pack 1", "yargdlc", 4, 2, 4, None, 5, 5, 4, 4, 4, 3),
+    459: SongMeta("Dancing Demons", "Space Weather", "YARG Official Setlist", "yarg", 6, 3, 6, None, 0, 0, 5, 5, 5, None),
+    460: SongMeta("Eat Me Alive", "Saturdays at Your Place", "YARG Official Setlist", "yarg", 3, 3, 4, None, None, None, 3, 3, 3, None),
+    461: SongMeta("In the Garden", "Red Vox", "YARG Official Setlist", "yarg", 1, 2, 4, None, 2, 2, 2, 2, 2, None),
+    462: SongMeta("Love Me Pls", "The Polarity", "YARG Official Setlist", "yarg", 3, 2, 4, None, 2, 2, 2, 2, 2, None),
+    463: SongMeta("Secrets", "State Champs", "YARG Official Setlist", "yarg", 3, 2, 3, None, 0, 0, 3, 3, 3, None),
 
 
 }
