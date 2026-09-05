@@ -17,6 +17,11 @@ class SongMeta(NamedTuple):
     harmony2: Optional[int]
     harmony3: Optional[int]
     rhythm5F: Optional[int]
+    coop5F: Optional[int]
+    guitar6F: Optional[int]
+    bass6F: Optional[int]
+    rhythm6F: Optional[int]
+    coop6F: Optional[int]
 
 Songs: Dict[int, SongMeta] = {
     1: SongMeta("106", "Frostbitt", "YARG Official Setlist", "yarg", 5, 4, 4, 4, None, None, 2, 2, 2, None),
