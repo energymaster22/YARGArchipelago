@@ -6,6 +6,8 @@ def instnamechange(input):
         return "Bass"
     if input == "rhythm5F":
         return "Rhythm"
+    if input == "coop5F":
+        return "Co-op Guitar"
     if input == "drums":
         return "Drums"
     if input == "keys5F":
@@ -18,6 +20,14 @@ def instnamechange(input):
         return "2 Part Harmony"
     if input == "harmony3":
         return "3 Part Harmony"
+    if input == "guitar6F":
+        return "6 Fret Guitar"
+    if input == "bass6F":
+        return "6 Fret Bass"
+    if input == "rhythm6F":
+        return "6 Fret Rhythm"
+    if input == "coop6F":
+        return "6 Fret Co-op Guitar"
     
     
     if input == "Guitar":
@@ -26,6 +36,8 @@ def instnamechange(input):
         return "bass5f"
     if input == "Rhythm":
         return "rhythm5F"
+    if input == "Co-op Guitar":
+        return "coop5F"
     if input == "Drums":
         return "drums"
     if input == "Keys":
@@ -38,6 +50,14 @@ def instnamechange(input):
         return "harmony2"
     if input == "3 Part Harmony":
         return "harmony3"
+    if input == "6 Fret Guitar":
+        return "guitar6F"
+    if input == "6 Fret Bass":
+        return "bass6F"
+    if input == "6 Fret Rhythm":
+        return "rhythm6F"
+    if input == "6 Fret Co-op Guitar":
+        return "coop6F"
 
 def itemnamefromindex(index):
     from .songinfo import Songs
