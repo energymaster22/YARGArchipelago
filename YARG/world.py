@@ -137,6 +137,7 @@ class YARG(World):
                         compatableinstruments += 1
                 if self.options.shuffle_6_fret_guitar:
                     if type((Songs.get(song)).guitar6F) == int:
+                        compatableinstruments += 1
                 
                 if compatableinstruments == 0:
                     fullsonglist.remove(song)
