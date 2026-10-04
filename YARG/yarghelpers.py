@@ -7,7 +7,7 @@ def instnamechange(input):
     if input == "rhythm5F":
         return "Rhythm"
     if input == "coop5F":
-        return "Co-op Guitar"
+        return "Co-op"
     if input == "drums":
         return "Drums"
     if input == "keys5F":
@@ -27,7 +27,7 @@ def instnamechange(input):
     if input == "rhythm6F":
         return "6 Fret Rhythm"
     if input == "coop6F":
-        return "6 Fret Co-op Guitar"
+        return "6 Fret Co-op"
     
     
     if input == "Guitar":
@@ -36,7 +36,7 @@ def instnamechange(input):
         return "bass5f"
     if input == "Rhythm":
         return "rhythm5F"
-    if input == "Co-op Guitar":
+    if input == "Co-op":
         return "coop5F"
     if input == "Drums":
         return "drums"
@@ -56,7 +56,7 @@ def instnamechange(input):
         return "bass6F"
     if input == "6 Fret Rhythm":
         return "rhythm6F"
-    if input == "6 Fret Co-op Guitar":
+    if input == "6 Fret Co-op":
         return "coop6F"
 
 def itemnamefromindex(index):
