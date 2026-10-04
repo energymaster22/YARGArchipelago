@@ -171,6 +171,14 @@ class ShuffleRhythm(Toggle):
 
     display_name = "Shuffle Rhythm"
 
+class Shuffle6FretGuitar(Toggle):
+    """
+    Shuffle the 6 fret lead guitar
+    into the multiworld.
+    """
+
+    display_name = "Shuffle 6 Fret Guitar"
+
 class ShuffleDrums(Toggle):
     """
     Shuffle the drums
@@ -234,6 +242,7 @@ class YARGOptions(PerGameCommonOptions):
     shuffle_guitar: ShuffleGuitar
     shuffle_bass: ShuffleBass
     shuffle_rhythm: ShuffleRhythm
+    shuffle_6_fret_guitar: Shuffle6FretGuitar
     shuffle_drums: ShuffleDrums
     shuffle_keys: ShuffleKeys
     shuffle_pro_keys: ShuffleProKeys
@@ -248,7 +257,7 @@ option_groups = [
     ),
     OptionGroup(
         "Instrument Shuffle",
-        [InstrumentShuffle, ShuffleGuitar, ShuffleBass, ShuffleRhythm, ShuffleDrums, 
+        [InstrumentShuffle, ShuffleGuitar, ShuffleBass, ShuffleRhythm, Shuffle6FretGuitar, ShuffleDrums, 
         ShuffleKeys, ShuffleProKeys, ShuffleVocals, Shuffle2PartHarmony, Shuffle3PartHarmony]
     ),
     OptionGroup(

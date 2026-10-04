@@ -45,6 +45,8 @@ def set_all_location_rules(world: YARGWorld) -> None:
                     instname = "2 Part Harmony"
                 if inst == "harmony3":
                     instname = "3 Part Harmony"
+                if inst == "guitar6F":
+                    instname = "6 Fret Guitar"
 
                 set_rule(location1, lambda state, i=instname, x=item: state.has_all((i, x), world.player))
                 

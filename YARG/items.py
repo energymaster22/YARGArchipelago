@@ -42,6 +42,9 @@ ITEM_NAME_TO_ID["2 Part Harmony"] = (itemID)
 itemID = itemID + 1
 ITEM_NAME_TO_ID["3 Part Harmony"] = (itemID)
 itemID = itemID + 1
+ITEM_NAME_TO_ID["6 Fret Guitar"] = (itemID)
+itemID = itemID + 1
+
 
 if longnames == False:
     for index in Songs.keys():
@@ -70,6 +73,7 @@ DEFAULT_ITEM_CLASSIFICATIONS["Pro Keys"] = (ItemClassification.progression)
 DEFAULT_ITEM_CLASSIFICATIONS["Vocals"] = (ItemClassification.progression)
 DEFAULT_ITEM_CLASSIFICATIONS["2 Part Harmony"] = (ItemClassification.progression)
 DEFAULT_ITEM_CLASSIFICATIONS["3 Part Harmony"] = (ItemClassification.progression)
+DEFAULT_ITEM_CLASSIFICATIONS["6 Fret Guitar"] = (ItemClassification.progression)
 
 class YARGItem(Item):
     game = "YARG"
@@ -111,6 +115,8 @@ def create_all_items(world: YARGWorld) -> None:
                 toitem = "2 Part Harmony"
             if inst == "harmony3":
                 toitem = "3 Part Harmony"
+            if inst == "guitar6F":
+                toitem = "6 Fret Guitar"
 
             if toitem != world.startinginstrument:    
                 itempool.append(world.create_item(str(toitem)))
