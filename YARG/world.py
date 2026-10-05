@@ -67,6 +67,15 @@ class YARG(World):
         self.shuffletoggle = False
         shuffledinstruments = 0
         self.instrumentlist = []
+        if self.options.shuffle_coop:
+            shuffledinstruments += 1
+            self.instrumentlist.append("coop5F")
+        if self.options.shuffle_6_fret_guitar:
+            shuffledinstruments += 1
+            self.instrumentlist.append("guitar6F")
+        if self.options.shuffle_6_fret_bass:
+            shuffledinstruments += 1
+            self.instrumentlist.append("bass6F")
         if self.options.shuffle_guitar:
             shuffledinstruments += 1
             self.instrumentlist.append("guitar5F")
@@ -76,9 +85,6 @@ class YARG(World):
         if self.options.shuffle_rhythm:
             shuffledinstruments += 1
             self.instrumentlist.append("rhythm5F")
-        if self.options.shuffle_coop:
-            shuffledinstruments += 1
-            self.instrumentlist.append("coop5F")
         if self.options.shuffle_drums:
             shuffledinstruments += 1
             self.instrumentlist.append("drums")
@@ -97,12 +103,6 @@ class YARG(World):
         if self.options.shuffle_3_part_harmony:
             shuffledinstruments += 1
             self.instrumentlist.append("harmony3")
-        if self.options.shuffle_6_fret_guitar:
-            shuffledinstruments += 1
-            self.instrumentlist.append("guitar6F")
-        if self.options.shuffle_6_fret_bass:
-            shuffledinstruments += 1
-            self.instrumentlist.append("bass6F")
 
         #Enable Instrument Shuffle only if 2 or more instruments were selected
         if shuffledinstruments >= 2:
@@ -240,6 +240,21 @@ class YARG(World):
                         
 
                         #Check for instrument compatibility and add combo to dictionary
+                        if x == "coop5F":
+                            if type((Songs.get(tempsonglist[tempindex])).coop5F) == int:
+                                self.songinstruments[tempsonglist[tempindex]] = "coop5F"
+                                tempsonglist.remove(tempsonglist[tempindex])
+                                combosuccess = True
+                        if x == "guitar6F":
+                            if type((Songs.get(tempsonglist[tempindex])).guitar6F) == int:
+                                self.songinstruments[tempsonglist[tempindex]] = "guitar6F"
+                                tempsonglist.remove(tempsonglist[tempindex])
+                                combosuccess = True
+                        if x == "bass6F":
+                            if type((Songs.get(tempsonglist[tempindex])).bass6F) == int:
+                                self.songinstruments[tempsonglist[tempindex]] = "bass6F"
+                                tempsonglist.remove(tempsonglist[tempindex])
+                                combosuccess = True
                         if x == "guitar5F":
                             if type((Songs.get(tempsonglist[tempindex])).guitar5F) == int:
                                 self.songinstruments[tempsonglist[tempindex]] = "guitar5F"
@@ -253,11 +268,6 @@ class YARG(World):
                         if x == "rhythm5F":
                             if type((Songs.get(tempsonglist[tempindex])).rhythm5F) == int:
                                 self.songinstruments[tempsonglist[tempindex]] = "rhythm5F"
-                                tempsonglist.remove(tempsonglist[tempindex])
-                                combosuccess = True
-                        if x == "coop5F":
-                            if type((Songs.get(tempsonglist[tempindex])).coop5F) == int:
-                                self.songinstruments[tempsonglist[tempindex]] = "coop5F"
                                 tempsonglist.remove(tempsonglist[tempindex])
                                 combosuccess = True
                         if x == "drums":
@@ -288,16 +298,6 @@ class YARG(World):
                         if x == "harmony3":
                             if type((Songs.get(tempsonglist[tempindex])).harmony3) == int:
                                 self.songinstruments[tempsonglist[tempindex]] = "harmony3"
-                                tempsonglist.remove(tempsonglist[tempindex])
-                                combosuccess = True
-                        if x == "guitar6F":
-                            if type((Songs.get(tempsonglist[tempindex])).guitar6F) == int:
-                                self.songinstruments[tempsonglist[tempindex]] = "guitar6F"
-                                tempsonglist.remove(tempsonglist[tempindex])
-                                combosuccess = True
-                        if x == "bass6F":
-                            if type((Songs.get(tempsonglist[tempindex])).bass6F) == int:
-                                self.songinstruments[tempsonglist[tempindex]] = "bass6F"
                                 tempsonglist.remove(tempsonglist[tempindex])
                                 combosuccess = True
                         loopnumber += 1
