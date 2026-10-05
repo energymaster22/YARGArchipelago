@@ -76,6 +76,9 @@ class YARG(World):
         if self.options.shuffle_rhythm:
             shuffledinstruments += 1
             self.instrumentlist.append("rhythm5F")
+        if self.options.shuffle_coop:
+            shuffledinstruments += 1
+            self.instrumentlist.append("coop5F")
         if self.options.shuffle_drums:
             shuffledinstruments += 1
             self.instrumentlist.append("drums")
@@ -97,6 +100,9 @@ class YARG(World):
         if self.options.shuffle_6_fret_guitar:
             shuffledinstruments += 1
             self.instrumentlist.append("guitar6F")
+        if self.options.shuffle_6_fret_bass:
+            shuffledinstruments += 1
+            self.instrumentlist.append("bass6F")
 
         #Enable Instrument Shuffle only if 2 or more instruments were selected
         if shuffledinstruments >= 2:
@@ -116,6 +122,9 @@ class YARG(World):
                         compatableinstruments += 1
                 if self.options.shuffle_rhythm:
                     if type((Songs.get(song)).rhythm5F) == int:
+                        compatableinstruments += 1
+                if self.options.shuffle_coop:
+                    if type((Songs.get(song)).coop5F) == int:
                         compatableinstruments += 1
                 if self.options.shuffle_drums:
                     if type((Songs.get(song)).drums) == int:
@@ -137,6 +146,9 @@ class YARG(World):
                         compatableinstruments += 1
                 if self.options.shuffle_6_fret_guitar:
                     if type((Songs.get(song)).guitar6F) == int:
+                        compatableinstruments += 1
+                if self.options.shuffle_6_fret_bass:
+                    if type((Songs.get(song)).bass6F) == int:
                         compatableinstruments += 1
                 
                 if compatableinstruments == 0:
@@ -161,6 +173,9 @@ class YARG(World):
                     if x == "rhythm5F":
                         if type((Songs.get(song)).rhythm5F) == int:
                             compatiblesong = True
+                    if x == "coop5F":
+                        if type((Songs.get(song)).coop5F) == int:
+                            compatiblesong = True
                     if x == "drums":
                         if type((Songs.get(song)).drums) == int:
                             compatiblesong = True
@@ -181,6 +196,9 @@ class YARG(World):
                             compatiblesong = True
                     if x == "guitar6F":
                         if type((Songs.get(song)).guitar6F) == int:
+                            compatiblesong = True
+                    if x == "bass6F":
+                        if type((Songs.get(song)).bass6F) == int:
                             compatiblesong = True
                 if compatiblesong == False:
                     raise OptionError(f"Instrument Shuffle failed: Remove incompatible instrument: {x} ")
@@ -237,6 +255,11 @@ class YARG(World):
                                 self.songinstruments[tempsonglist[tempindex]] = "rhythm5F"
                                 tempsonglist.remove(tempsonglist[tempindex])
                                 combosuccess = True
+                        if x == "coop5F":
+                            if type((Songs.get(tempsonglist[tempindex])).coop5F) == int:
+                                self.songinstruments[tempsonglist[tempindex]] = "coop5F"
+                                tempsonglist.remove(tempsonglist[tempindex])
+                                combosuccess = True
                         if x == "drums":
                             if type((Songs.get(tempsonglist[tempindex])).drums) == int:
                                 self.songinstruments[tempsonglist[tempindex]] = "drums"
@@ -272,6 +295,11 @@ class YARG(World):
                                 self.songinstruments[tempsonglist[tempindex]] = "guitar6F"
                                 tempsonglist.remove(tempsonglist[tempindex])
                                 combosuccess = True
+                        if x == "bass6F":
+                            if type((Songs.get(tempsonglist[tempindex])).bass6F) == int:
+                                self.songinstruments[tempsonglist[tempindex]] = "bass6F"
+                                tempsonglist.remove(tempsonglist[tempindex])
+                                combosuccess = True
                         loopnumber += 1
         
             #Apply a random instrument to each song
@@ -300,6 +328,10 @@ class YARG(World):
                         if type((Songs.get(song)).rhythm5F) == int:
                             self.songinstruments[song] = "rhythm5F"
                             combosuccess = True
+                    if self.instrumentlist[tempindex] == "coop5F":
+                        if type((Songs.get(song)).coop5F) == int:
+                            self.songinstruments[song] = "coop5F"
+                            combosuccess = True
                     if self.instrumentlist[tempindex] == "drums":
                         if type((Songs.get(song)).drums) == int:
                             self.songinstruments[song] = "drums"
@@ -327,6 +359,10 @@ class YARG(World):
                     if self.instrumentlist[tempindex] == "guitar6F":
                         if type((Songs.get(song)).guitar6F) == int:
                             self.songinstruments[song] = "guitar6F"
+                            combosuccess = True
+                    if self.instrumentlist[tempindex] == "bass6F":
+                        if type((Songs.get(song)).bass6F) == int:
+                            self.songinstruments[song] = "bass6F"
                             combosuccess = True
             
                     
@@ -363,6 +399,8 @@ class YARG(World):
                 self.startinginstrument = "Bass"
             if self.songinstruments[self.starting_song] == "rhythm5F":
                 self.startinginstrument = "Rhythm"
+            if self.songinstruments[self.starting_song] == "coop5F":
+                self.startinginstrument = "Co-op"
             if self.songinstruments[self.starting_song] == "drums":
                 self.startinginstrument = "Drums"
             if self.songinstruments[self.starting_song] == "keys5F":
@@ -377,6 +415,8 @@ class YARG(World):
                 self.startinginstrument = "3 Part Harmony"
             if self.songinstruments[self.starting_song] == "guitar6F":
                 self.startinginstrument = "6 Fret Guitar"
+            if self.songinstruments[self.starting_song] == "bass6F":
+                self.startinginstrument = "6 Fret Bass"
             pushedinstrument = self.create_item(self.startinginstrument)
             self.push_precollected(pushedinstrument)
 
@@ -430,6 +470,8 @@ class YARG(World):
                 instname = "Bass"
             if inst == "rhythm5F":
                 instname = "Rhythm"
+            if inst == "coop5F":
+                instname = "Co-op"
             if inst == "drums":
                 instname = "Drums"
             if inst == "keys5F":
@@ -444,6 +486,8 @@ class YARG(World):
                 instname = "3 Part Harmony"
             if inst == "guitar6F":
                 instname = "6 Fret Guitar"
+            if inst == "bass6F":
+                instname = "6 Fret Bass"
             self.multiworld.completion_condition[self.player] = lambda state: (
                 state.has_all((itemnamefromindex(self.selectedsonglist[goal_song_index]), instname), self.player) and state.has("YARG Gem", self.player, self.yarggemamount)
             )
