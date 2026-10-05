@@ -171,6 +171,14 @@ class ShuffleRhythm(Toggle):
 
     display_name = "Shuffle Rhythm"
 
+class ShuffleCoop(Toggle):
+    """
+    Shuffle the 5 fret co-op guitar
+    into the multiworld.
+    """
+
+    display_name = "Shuffle Co-op"
+
 class Shuffle6FretGuitar(Toggle):
     """
     Shuffle the 6 fret lead guitar
@@ -178,6 +186,14 @@ class Shuffle6FretGuitar(Toggle):
     """
 
     display_name = "Shuffle 6 Fret Guitar"
+
+class Shuffle6FretBass(Toggle):
+    """
+    Shuffle the 6 fret bass guitar
+    into the multiworld.
+    """
+
+    display_name = "Shuffle 6 Fret Bass"
 
 class ShuffleDrums(Toggle):
     """
@@ -242,7 +258,9 @@ class YARGOptions(PerGameCommonOptions):
     shuffle_guitar: ShuffleGuitar
     shuffle_bass: ShuffleBass
     shuffle_rhythm: ShuffleRhythm
+    shuffle_coop: ShuffleCoop
     shuffle_6_fret_guitar: Shuffle6FretGuitar
+    shuffle_6_fret_bass: Shuffle6FretBass
     shuffle_drums: ShuffleDrums
     shuffle_keys: ShuffleKeys
     shuffle_pro_keys: ShuffleProKeys
@@ -257,8 +275,8 @@ option_groups = [
     ),
     OptionGroup(
         "Instrument Shuffle",
-        [InstrumentShuffle, ShuffleGuitar, ShuffleBass, ShuffleRhythm, Shuffle6FretGuitar, ShuffleDrums, 
-        ShuffleKeys, ShuffleProKeys, ShuffleVocals, Shuffle2PartHarmony, Shuffle3PartHarmony]
+        [InstrumentShuffle, ShuffleGuitar, ShuffleBass, ShuffleRhythm, ShuffleCoop, Shuffle6FretGuitar, Shuffle6FretBass
+        ShuffleDrums, ShuffleKeys, ShuffleProKeys, ShuffleVocals, Shuffle2PartHarmony, Shuffle3PartHarmony]
     ),
     OptionGroup(
         "Visibility Options",
