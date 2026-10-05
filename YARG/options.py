@@ -275,7 +275,7 @@ option_groups = [
     ),
     OptionGroup(
         "Instrument Shuffle",
-        [InstrumentShuffle, ShuffleGuitar, ShuffleBass, ShuffleRhythm, ShuffleCoop, Shuffle6FretGuitar, Shuffle6FretBass
+        [InstrumentShuffle, ShuffleGuitar, ShuffleBass, ShuffleRhythm, ShuffleCoop, Shuffle6FretGuitar, Shuffle6FretBass,
         ShuffleDrums, ShuffleKeys, ShuffleProKeys, ShuffleVocals, Shuffle2PartHarmony, Shuffle3PartHarmony]
     ),
     OptionGroup(
